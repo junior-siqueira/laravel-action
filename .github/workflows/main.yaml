@@ -11,3 +11,11 @@ jobs:
       - uses: ./.github/actions/config-laravel
       - run: ./vendor/bin/phpunit
       - run: ./vendor/bin/phpcs
+      - name: testando ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: 51.222.32.199
+        username: root
+        password: huahua14
+        port: 22
+        script: whoami
