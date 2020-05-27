@@ -18,4 +18,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: 'cd /var/www/html/testando && sed -i -e "s/\r$//" ./server_deploy.sh'
+          script: 'cd /var/www/html/testando && sed -i -e "s/\r$//" .././server_deploy.sh'
