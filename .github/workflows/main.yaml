@@ -18,5 +18,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: 'cd /var/www/html && ./server_deploy.sh'
+          script: './server_deploy.sh && cd /var/www/html'
           debug: true
